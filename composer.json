@@ -1,0 +1,32 @@
+{
+    "name": "eliud/all_in",
+    "description": "API Integration Project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Eliud\\AllIn\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "pphantomfury",
+            "email": "eliud.obosi@strathmore.edu"
+        }
+    ],
+    "require": {
+        "knplabs/github-api": "^3.0",
+        "http-interop/http-factory-guzzle": "^1.0"
+    },
+    "config": {
+        "disable-tls": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.org"
+        }
+    }
+}
