@@ -96,14 +96,17 @@ nav a:hover { color: #ffb703; }
     position: absolute;
     bottom: 50px;
     right: 50px;
-    width: 50%;
+    width: auto;
+    max-width: 60%;
     z-index: 10;
+    overflow: visible;
 }
 
 .slides {
     display: flex;
     gap: 15px;
     align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .slide {
@@ -165,6 +168,62 @@ main {
     text-decoration: none;
     display: inline-block;
     margin-top: 15px;
+}
+/* AI Chat Modal Specific Styles */
+.ai-chat {
+    color: #333 !important; /* Forces text to be dark grey/black */
+}
+
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Style the bubbles */
+.chat-box p {
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 85%;
+    line-height: 1.4;
+}
+
+.chat-box strong {
+    color: #121212;
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+}
+
+/* Input Area Styling */
+.chat-input-area {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.chat-input-area button {
+    padding: 10px 20px;
+    background-color: #ffb703;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 footer {
